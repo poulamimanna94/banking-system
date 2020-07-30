@@ -17,6 +17,7 @@ public class AccountController {
 	
 	@PostMapping("/account/createAccount")
 	public Long createAccount(@RequestBody AccountRequest acRe) {
+		
 		Long accNumber = accService.createAccount(acRe);
 		return accNumber;
 		
